@@ -39,7 +39,11 @@
     <ItemGroup>
         <None Include="..\InjectSourceGen\bin\$(Configuration)\net8.0\InjectSourceGen.dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false" />
         <None Include="README.md" Pack="true" PackagePath="\" Visible="false" Condition="Exists('README.md')"/>
-        
+    </ItemGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="8.3.0" GeneratePathProperty="true" />
+        <PackageReference Include="GodotSharp" Version="4.4.1" GeneratePathProperty="true" />
     </ItemGroup>
     
     <ItemGroup>
